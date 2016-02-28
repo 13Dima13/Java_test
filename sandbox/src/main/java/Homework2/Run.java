@@ -12,6 +12,6 @@ public class Run {
     public static double distance (Point p1, Point p2){
       double x = p2.x - p1.x;
       double y = p2.y - p1.y;
-      return Math.sqrt(x * x + y * y);
+      return Math.sqrt(Math.pow (x, 2) + Math.pow (y , 2));
     }
   }
