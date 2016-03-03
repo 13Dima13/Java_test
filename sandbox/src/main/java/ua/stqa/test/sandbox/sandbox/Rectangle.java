@@ -1,4 +1,4 @@
-package ua.stqa.test.sandbox;
+package ua.stqa.test.sandbox.sandbox;
 
 public class Rectangle {
 
