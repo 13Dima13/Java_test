@@ -12,6 +12,5 @@ public class CheckPoints {
     double x = p2.x - p1.x;
     double y = p2.y - p1.y;
     Assert.assertEquals(Math.sqrt(Math.pow (x, 2) + Math.pow (y , 2)), 2.0);
-    Assert.assertEquals(2, 1.0); //Эту строку я добавил чтобы проверить теорию "можно хоть 100 асершенов подряд"
   }
 }
