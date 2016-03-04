@@ -14,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class GroupDeletion {
+public class GroupDeletionTests extends TestBase {
     FirefoxDriver wd;
     
     @BeforeMethod
@@ -45,11 +45,6 @@ public class GroupDeletion {
     }
     
     public static boolean isAlertPresent(FirefoxDriver wd) {
-        try {
-            wd.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
+        return TestBase.isAlertPresent(wd);
     }
 }
