@@ -1,6 +1,5 @@
 package ua.stqa.test.addressbook.appmanager;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,7 +11,7 @@ public class BaseHelper {
     this.wd = wd;
   }
 
-  public static boolean isAlertPresent(FirefoxDriver wd) {
+  public boolean isAlertPresent() {
     try {
       wd.switchTo().alert();
       return true;
