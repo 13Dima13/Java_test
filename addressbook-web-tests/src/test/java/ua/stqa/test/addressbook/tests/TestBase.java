@@ -1,7 +1,7 @@
 package ua.stqa.test.addressbook.tests;
 
 
-import HomeWork4and5.InfoContact;
+import ua.stqa.test.addressbook.model.InfoContact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;

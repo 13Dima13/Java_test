@@ -11,15 +11,6 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
   FirefoxDriver wd;
 
-  public static boolean isAlertPresent(FirefoxDriver wd) {
-    try {
-      wd.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-  }
-
   public void init() {
     wd = new FirefoxDriver();
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -63,10 +54,6 @@ public class ApplicationManager {
 
   public void gotoGroupPage() {
     wd.findElement(By.linkText("groups")).click();
-  }
-
-  public void stop() {
-    wd.quit();
   }
 
   public void deleteSelectedGroups() {

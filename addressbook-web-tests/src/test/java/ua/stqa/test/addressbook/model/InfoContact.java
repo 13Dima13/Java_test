@@ -1,4 +1,4 @@
-package HomeWork4and5;
+package ua.stqa.test.addressbook.model;
 
 public class InfoContact {
   private final String name;

@@ -1,14 +1,7 @@
-package HomeWork4and5;
+package ua.stqa.test.addressbook.tests;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+import ua.stqa.test.addressbook.model.InfoContact;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
-import ua.stqa.test.addressbook.tests.TestBase;
 
 public class NewContactCreation extends TestBase{
 
