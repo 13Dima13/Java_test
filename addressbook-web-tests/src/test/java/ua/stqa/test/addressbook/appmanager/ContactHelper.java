@@ -1,11 +1,12 @@
 package ua.stqa.test.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ua.stqa.test.addressbook.model.InfoContacts;
 
 public class ContactHelper extends BaseHelper {
-  public ContactHelper(FirefoxDriver wd) {
+  public ContactHelper(WebDriver wd) {
     super(wd);
   }
 
