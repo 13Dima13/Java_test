@@ -32,7 +32,6 @@ public class ContactHelper extends BaseHelper {
 
   public void selectContact() {
     click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[7]/a/img"));
-
   }
 
   public void modifyContact() {
@@ -41,6 +40,17 @@ public class ContactHelper extends BaseHelper {
 
   public void updateContact() {
     click(By.xpath("//div/div[4]/form[1]/input[1]"));
-    //click(By.linkText("update"));
+  }
+
+  public void selectContactForDelete() {
+    click(By.xpath(".//tr[@name='entry'][1]//input"));
+  }
+
+  public void confirmRemove() {
+    wd.switchTo().alert().accept();
+  }
+
+  public void deleteContact() {
+    click(By.xpath(".//*[@value='Delete']"));
   }
 }
