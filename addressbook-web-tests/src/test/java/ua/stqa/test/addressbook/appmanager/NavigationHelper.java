@@ -7,7 +7,8 @@ public class NavigationHelper {
   FirefoxDriver wd;
 
   public NavigationHelper(FirefoxDriver wd) {
-    private FirefoxDriver wd;
+
+    this.wd = wd;
   }
 
   public void gotoGroupPage() {wd.findElement(By.linkText("groups")).click();
