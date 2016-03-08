@@ -1,4 +1,4 @@
-package HomeWork4;
+package HomeWork4and5;
 
 public class InfoContact {
   private final String name;
