@@ -3,8 +3,8 @@ package test.work.Steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -29,7 +29,7 @@ public class TestBase {
     }
 
     private void browser() {
-        wd = new InternetExplorerDriver();
+        wd = new ChromeDriver();
     }
 
     public void logoff() {
@@ -40,13 +40,10 @@ public class TestBase {
         wd.findElement(By.linkText("Log Off")).click();
     }
 
-    public void login(String login, String password) {
+    public void login(String login, String password, String user, String pass) {
         wd.get("http://eca-dev01.spcph.local/Audit_dgv/");
-        wd.findElement(By.id("username")).click();
-        wd.findElement(By.id("username")).clear();
-        wd.findElement(By.id("username")).sendKeys(login);
-        wd.findElement(By.id("password")).click();
-        wd.findElement(By.id("username")).clear();
+        wd.findElement(By.id(user)).click();
+        wd.findElement(By.id(pass)).click();
         wd.findElement(By.id("password")).sendKeys(password);
         wd.findElement(By.id("username")).click();
         wd.findElement(By.id("username")).clear();
